@@ -1,0 +1,142 @@
+.section-header {
+  margin-bottom: 60px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--color-text-light);
+  margin-top: 16px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background-color: var(--color-bg);
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.service-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent-light);
+}
+
+.service-card.expanded {
+  border-color: var(--color-accent);
+}
+
+.service-card-header {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.service-icon-wrapper {
+  background-color: var(--color-bg-alt);
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon-wrapper {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.service-card.expanded .service-icon-wrapper {
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.service-info {
+  flex-grow: 1;
+}
+
+.service-title {
+  font-family: var(--font-sans);
+  font-size: 1.15rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 4px;
+}
+
+.service-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+}
+
+.service-action {
+  color: var(--color-accent);
+}
+
+.service-list-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  background-color: var(--color-bg-alt);
+}
+
+.service-list-container.open {
+  max-height: 600px;
+  border-top: 1px solid var(--color-border);
+}
+
+.service-list {
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.service-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+}
+
+.service-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.service-card-footer {
+  padding: 0 24px 24px;
+}
+
+.btn-sm {
+  padding: 8px 24px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

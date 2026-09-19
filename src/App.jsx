@@ -12,10 +12,15 @@ function App() {
     <div className="app">
       <Navbar />
       <Hero />
+      <div className="section-divider" />
       <About />
+      <div className="section-divider" />
       <Services />
+      <div className="section-divider" />
       <Gallery />
+      <div className="section-divider" />
       <WhyChooseUs />
+      <div className="section-divider" />
       <Contact />
       <Footer />
     </div>

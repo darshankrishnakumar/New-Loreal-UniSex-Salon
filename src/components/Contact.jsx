@@ -18,7 +18,7 @@ const Contact = () => {
             Contact & <span className="text-primary">Location</span>
           </h2>
           <p className="contact-subtitle">
-            Ready for a transformation? Book your appointment or visit our salon today.
+            Ready for a transformation? Send your enquiry or visit our salon today.
           </p>
 
           <div className="contact-details">

@@ -134,9 +134,11 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+.mobile-enquiry-btn,
 .mobile-book-btn {
   margin-top: 10px;
   width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 991px) {

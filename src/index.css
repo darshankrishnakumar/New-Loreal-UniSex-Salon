@@ -8,7 +8,7 @@
   --color-text-dark: #1A1A1A;
   --color-text-light: #666666; /* Soft neutral gray */
   --color-bg: #FFFFFF; /* Clean white */
-  --color-bg-alt: #FDFDFD; /* Ivory / Off-white */
+  --color-bg-alt: #FBF9FC; /* Subtle warm luxury tint */
   --color-border: #EAEAEA;
   
   --font-serif: 'Playfair Display', serif;
@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -74,6 +75,22 @@ button {
 
 .section-alt {
   background-color: var(--color-bg-alt);
+}
+
+.section-divider {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 1.5px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(74, 21, 75, 0.15) 15%,
+    rgba(212, 175, 55, 0.55) 50%,
+    rgba(74, 21, 75, 0.15) 85%,
+    transparent 100%
+  );
+  border: none;
 }
 
 .btn-primary {

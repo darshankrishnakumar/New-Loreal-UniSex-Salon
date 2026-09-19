@@ -1,12 +1,7 @@
-import { MapPin, Clock, ArrowRight } from 'lucide-react';
+import { MapPin, Clock } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
-  const bookAppointment = () => {
-    const message = encodeURIComponent("Hi, I would like to book an appointment at New L'Oreal Professional Unisex Salon. Please share the available timings.");
-    window.open(`https://wa.me/919942890776?text=${message}`, '_blank');
-  };
-
   return (
     <section id="home" className="hero-section">
       <div className="container hero-container">
@@ -22,9 +17,9 @@ const Hero = () => {
           </p>
           
           <div className="hero-buttons">
-            <button className="btn-primary" onClick={bookAppointment}>
-              Book an Appointment
-            </button>
+            <a href="#contact" className="btn-primary">
+              Enquiry
+            </a>
             <a href="#services" className="btn-secondary">
               Explore Services
             </a>

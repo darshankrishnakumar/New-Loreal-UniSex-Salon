@@ -27,10 +27,6 @@ const Navbar = () => {
     { name: 'Contact', href: '#contact' }
   ];
 
-  const bookAppointment = () => {
-    const message = encodeURIComponent("Hi, I would like to book an appointment at New L'Oreal Professional Unisex Salon. Please share the available timings.");
-    window.open(`https://wa.me/919942890776?text=${message}`, '_blank');
-  };
 
   return (
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
@@ -53,9 +49,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-actions desktop-only">
-          <button className="btn-primary" onClick={bookAppointment}>
-            Book Appointment
-          </button>
+          <a href="#contact" className="btn-primary">
+            Enquiry
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -77,9 +73,13 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <button className="btn-primary mobile-book-btn" onClick={bookAppointment}>
-            Book Appointment
-          </button>
+          <a 
+            href="#contact" 
+            className="btn-primary mobile-enquiry-btn" 
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Enquiry
+          </a>
         </div>
       </div>
     </nav>
